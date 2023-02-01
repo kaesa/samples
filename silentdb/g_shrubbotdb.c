@@ -2132,11 +2132,7 @@ void G_DB_UpdateAliases( void )
 // overwrite it.
 //
 // return value: -1 if failed,
-//               0 if any success,
-//
-// Ps. This is practically copy of what I made to Nitmod. If at some
-// point the db would handle more data then just users, this function would
-// need to be broken into smaller pieces that handle different dbs separately.
+//               0 if any success
 int32_t	G_DB_InitDatabase(qboolean force)
 {
 	db_users_info_t			*info=&db_users_info;
